@@ -1,20 +1,21 @@
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
---------------------------------------------------------------------------------------------------------------------------------------------
-local key = "2436833661"
-local response = game:HttpGet("https://pastebin.com/raw/YOUR_PASTE_ID")
+---------------------------------------------------------------------------------------------------------------------------------------
+local key = "8199829597"
+local userInput = "mononoke105lz"
 
-if response ~= key then
-    print("Key Invalid")
+if userInput == key then
+    print("Key hợp lệ! Bắt đầu chạy script.")
+else
+    print("Key không hợp lệ!")
     return
 end
-print("Key success ,Royz Thành Công !")
 local Window = Fluent:CreateWindow({
     Title = "Xroyz Hub",
     SubTitle = "By Nicooo",
     TabWidth = 130,
-    Size = UDim2.fromOffset(430, 350),
+    Size = UDim2.fromOffset(530, 450),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Darker",
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
