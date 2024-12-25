@@ -2,13 +2,14 @@ local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 ---------------------------------------------------------------------------------------------------------------------------------------
-local key = "8199829597"
-local userInput = "mononoke105lz"
-
-if userInput == key then
-    print("Key hợp lệ! Bắt đầu chạy script.")
+local licenseKey = "PAID_SCRIPT_KEY"
+print("Nhập mã kích hoạt:")
+local input = io.read()
+if input == licenseKey then
+    print("Kích hoạt thành công!")
+    -- Tiếp tục chạy script
 else
-    print("Key không hợp lệ!")
+    print("Sai mã kích hoạt!")
     return
 end
 local Window = Fluent:CreateWindow({
