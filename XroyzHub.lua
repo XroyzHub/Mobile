@@ -1,19 +1,11 @@
-local key = "ROYZBLOXFRUITS"
--- Tạo key chính thức
-local officialKey = "ROYZBLOXFRUITS"
+local key = "2436833661"
+local response = game:HttpGet("https://pastebin.com/raw/YOUR_PASTE_ID")
 
--- Nhập key từ người dùng
-print("ROYZBLOXFRUITS")
-local userKey = game:HttpGet("https://pastebin.com/raw/YOUR_KEY_FILE") -- Nếu muốn nhập qua API/key file
-
--- Kiểm tra key
-if userKey == officialKey then
-    print("Key hợp lệ! Đang tải script...")
-    -- Tải script chính
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XroyzHub/Mobile/refs/heads/main/XroyzHub.lua"))()
-else
-    print("Key không hợp lệ. Vui lòng thử lại.")
+if response ~= key then
+    print("Key Invalid")
+    return
 end
+print("Key success ,Royz Thành Công !")
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
